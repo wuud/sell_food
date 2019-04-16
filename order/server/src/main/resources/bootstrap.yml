@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: order
+  cloud:
+    config:
+      discovery:
+        service-id: config
+        enabled: true
+#hystrix:
+#  command:
+#    test:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 2000
+#management:
+#  server:
+#    servlet:
+#      context-path: /

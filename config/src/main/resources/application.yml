@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+#          uri: https://gitee.com/wu_ud/config-repo
+#          username: 18838273428
+#          password: w123456
+          uri: https://github.com/wuud/config-repo
+          username: 2458416543@qq.com
+          password: wudi19991007
+#          basedir: E:/basedir
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

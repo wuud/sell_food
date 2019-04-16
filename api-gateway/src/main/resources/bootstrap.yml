@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      discovery:
+        service-id: config
+        enabled: true
+#zuul:
+#  routes:
+#    aaaa:
+#      path: /myOrder/**
+#      serviceId: order
+#    order: /myOrder/**
+#  ignored-patterns:
+#    - /order/getConfig
+#  sensitive-headers:
